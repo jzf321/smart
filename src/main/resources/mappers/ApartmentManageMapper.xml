@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.opensmart.dao.ApartmentManageDao">
+    <select id="listAllApartment" parameterType="string" resultType="com.opensmart.entity.Apartment">
+        select
+           apartmentId,
+           apartmentName,
+           apartmentType,
+           apartmentProvince,
+           apartmentCity,
+           apartmentCounty,
+           detailAddress,
+           apartManagerId
+        from apart_apartmentData
+        where apartManagerId=#{userId}
+    </select>
+
+</mapper>
