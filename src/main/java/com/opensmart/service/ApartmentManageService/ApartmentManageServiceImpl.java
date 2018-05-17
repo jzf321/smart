@@ -18,7 +18,6 @@ public class ApartmentManageServiceImpl implements ApartmentManageService{
 
     @Override
     public List<String> listRoomsDataByApartmentId(String apartmentId) {
-        int a=0;
         return null;
     }
 
